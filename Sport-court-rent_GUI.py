@@ -4,21 +4,18 @@ __author__ = "DDENG"
 
 import tkinter as tk    # python 3.x
 from tkinter import ttk  # 美化元件
-from PIL import ImageTk, Image
 import tkinter.messagebox as tkMessageBox
-
+# 載入驅動
 from selenium import webdriver  # 打開網站
 from selenium.webdriver.common.keys import Keys
 from selenium.webdriver.support.ui import WebDriverWait
 from selenium.webdriver import ActionChains
-# 載入驅動
 from selenium.webdriver.common.by import By
 from selenium.webdriver.support.wait import WebDriverWait
 from selenium.webdriver.support import expected_conditions as EC
+from PIL import ImageTk, Image # 打開圖片和對圖片處理
 import time  # 運行停頓
-import pyautogui
-import re  # 正則
-from PIL import Image  # 打開圖片和對圖片處理
+import re  # 正則 
 import pytesseract  # 圖片轉文字
 
 # 提醒視窗(確認)
@@ -26,7 +23,6 @@ def alert_check():
     while 1:
         try:
             driver.switch_to.alert.accept()
-            print ('確定')
             break
         except:
             print("網頁載入中...")
