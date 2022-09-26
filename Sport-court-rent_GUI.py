@@ -141,12 +141,12 @@ class VerificationCode():
 
 # 建立tk視窗
 win = tk.Tk()
-win.wm_title("Badminton")
+win.wm_title("rent")
 win.minsize(width=700,height=425)
 win.resizable(width=False,height=False)
 
 # 文字標籤
-label_tittle=tk.Label(win,text="羽球場租借",font=("新細明體",30))
+label_tittle=tk.Label(win,text="各種球類場館自動租借",font=("新細明體",30))
 label_tittle.place(x=60,y=30)
 label_account=tk.Label(win,text="請輸入帳號 : ", font=("新細明體",10))
 label_account.place(x=30,y=130)
